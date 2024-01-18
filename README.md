@@ -34,3 +34,9 @@ Este projeto apresenta uma demonstração de um aplicativo construído com React
 4.  Acesse o projeto utilizando `http://localhost:5173/`
 
 Neste estágio, você deverá ser capaz de acessar a API através do seu navegador.
+
+<img src="./src/assets/imagen home.png">
+
+<img src="./src/assets/erro.png">
+
+<img src="./src/assets/tabela.png">
