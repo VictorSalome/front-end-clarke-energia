@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiSupplier = axios.create({
-    baseURL: 'http://localhost:3000/'
+    baseURL: 'http://stingray-app-v3sq7.ondigitalocean.app/'
 
 
 })
