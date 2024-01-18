@@ -9,7 +9,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5rem;
+    padding: 0 10rem;
     position: relative;
 
     @media screen and (max-width: 900px){
@@ -44,9 +44,10 @@ export const ContainerCard = styled.div`
     background: white;
     border-radius: 10px;
     color: black;
-    height: 250px;
-    width: 300px;
+    height: 300px;
+    width: 700px;
     margin-top: 50px;
+    padding: 50px;
 
     h2{
         font-weight: 500;
@@ -80,7 +81,7 @@ export const Button = styled.button`
     background-color: #26E48F;
     border-radius: 30px;
     width: 80%;
-    height: 35px;
+    height: 50px;
     font-size: 15px;
     font-weight: bold;
     border: 1px solid #000;
@@ -103,20 +104,23 @@ export const ContainerText = styled.div`
     z-index: 3;
     color: white;
    
-    padding: 20px;
+    padding: 30px;
     /* width: 600px; */
     /* margin-right: -550px;
     margin-bottom: -100px; */
+    max-width: 50%;
 
     h1{
         font-weight: 700;
-        font-size: 35px;
+        font-size: 50px;
         margin-top: 20px;
         margin-bottom: 20px;
+        line-height: 60px;
     }
 
     p{
         font-weight: 600;
+        font-size: 18px;
     }
 
 

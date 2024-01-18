@@ -31,54 +31,35 @@ export const PageHome = () => {
         <>
             <ToastContainer />
             <Header />
-            <Container
-                img={`https://clarke.com.br/wp-content/uploads/2022/12/energia-eolica00.png`}
-            >
+            <Container img={`https://clarke.com.br/wp-content/uploads/2022/12/energia-eolica00.png`}>
                 <ContainerText>
-                    <div>
-                        <p>
-                            #ofuturoélivre
-                        </p>
-                    </div>
-                    <div>
-                        <h1>
-                            Economize até 40% na conta de luz da sua empresa sem precisar investir
-                        </h1>
-                    </div>
-                    <div>
-                        <p>
-                            Se o seu negócio gasta mais de R$ 10 mil por mês com energia, a Clarke pode te ajudar a economizar com o Mercado Livre de Energia.
-                        </p>
-                    </div>
+                        <p>#ofuturoélivre</p>
+                        <h1>Economize até 40% na conta de luz da sua empresa sem precisar investir</h1>
+                        <p>Se o seu negócio gasta mais de R$ 10 mil por mês com energia, a Clarke pode te ajudar a economizar com o Mercado Livre de Energia.</p>
                 </ContainerText>
                 <ContainerMain>
                     <ContainerCard>
                         <h2>Informe seu consumo mensal de gasto de luz em kwh!</h2>
-                        <div>
-                            <Input type="number"
-                                placeholder="insira seu consumo, ex: 3000kwh"
-                                onChange={onChangeMileage}
-                                value={mileage}
-                            />
-                        </div>
-                        <div>
-                            <Button type="submit"
-                                onClick={() => virifyingMileage()}
-                            >cotar fornecedores</Button>
-                        </div>
+                        <Input 
+                            type="number"
+                            placeholder="insira seu consumo, ex: 3000kwh"
+                            onChange={onChangeMileage}
+                            value={mileage}
+                        />
 
-                        <div>
-                            <BasicModal setOpen={setOpen} open={open} mileage={mileage} />
-                        </div>
+                        <Button
+                            type="submit"
+                            onClick={() => virifyingMileage()}
+                        >Cotar Fornecedores</Button>
+                        <BasicModal
+                         setOpen={setOpen} 
+                         open={open} 
+                         mileage={mileage}
+                        />
                     </ContainerCard>
-
                 </ContainerMain>
-
-
             </Container>
         </>
-
-
     )
 }
 
