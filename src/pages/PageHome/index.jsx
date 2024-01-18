@@ -1,32 +1,35 @@
 import { Header } from "../../components/Header"
-import { Container, ContainerMain, Input, ContainerCard, ContainerText } from "./styles"
+import { Container, ContainerMain, Input, ContainerCard, ContainerText, Button } from "./styles"
 
 import { BasicModal } from "../../components/Modal"
 import { useState } from "react"
+
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 
 export const PageHome = () => {
     const [mileage, setMileage] = useState("")
     const [open, setOpen] = useState(false);
 
-
     const onChangeMileage = (e) => {
         e.preventDefault();
         setMileage(e.target.value)
     }
 
-    console.log('Teste', mileage)
     const virifyingMileage = () => {
         if (mileage > 0) {
             setOpen(true)
         } else {
-            alert('Insira um valor maior que 0')
+            toast.warn('Insira um valor maior que zero!')
+
             setOpen(false)
         }
     }
 
     return (
         <>
+            <ToastContainer />
             <Header />
             <Container
                 img={`https://clarke.com.br/wp-content/uploads/2022/12/energia-eolica00.png`}
@@ -59,9 +62,9 @@ export const PageHome = () => {
                             />
                         </div>
                         <div>
-                            <button type="submit"
+                            <Button type="submit"
                                 onClick={() => virifyingMileage()}
-                            >cotar fornecedores</button>
+                            >cotar fornecedores</Button>
                         </div>
 
                         <div>

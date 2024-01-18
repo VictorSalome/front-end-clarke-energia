@@ -3,10 +3,9 @@ import styled from 'styled-components'
 export const Container = styled.div`
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     height: 80px;
     width: 100%;
-    padding: 0 200px;
+   
 
 `
 
@@ -19,13 +18,35 @@ export const Logo = styled.img`
     `
 
 
-export const MainHeader = styled.div`
+export const MainHeader = styled.header`
     display: flex;
     gap: 20px;
     font-size: 14px;
     font-weight: bold;
-    padding-right: 230px;
+
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    width: 100%;
+
+    nav{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            list-style: none;
+            li{
+             
+            
+            }
+        }
+       
+
+    }
 
     h3{
         &:hover {
@@ -36,7 +57,7 @@ export const MainHeader = styled.div`
 `
 
 export const Button = styled.button`
-    margin-left: 180px;
+    /* margin-left: 180px; */
     background-color: #26E48F;
     border-radius: 30px;
     width: 175px;

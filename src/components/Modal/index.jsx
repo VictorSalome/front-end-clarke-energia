@@ -1,6 +1,5 @@
-import * as React from 'react';
+
 import Box from '@mui/material/Box';
-import { Button } from '../../pages/PageHome/styles';
 import Modal from '@mui/material/Modal';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -29,7 +28,7 @@ const style = {
 
 export const BasicModal = ({ setOpen, open, mileage }) => {
 
-    const handleOpen = () => setOpen(true);
+    // const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
     const [suppliers, setSuppliers] = useState([]);
 
@@ -51,7 +50,6 @@ export const BasicModal = ({ setOpen, open, mileage }) => {
 
     return (
         <Container>
-            {/* <Button onClick={handleOpen}>Cotar fornecedores</Button> */}
             <Modal
                 open={open}
                 onClose={handleClose}

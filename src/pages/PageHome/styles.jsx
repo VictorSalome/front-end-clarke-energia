@@ -8,8 +8,14 @@ export const Container = styled.div`
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 5rem;
     position: relative;
+
+    @media screen and (max-width: 900px){
+        flex-direction: column;
+        
+    }
    
  &::before{
      content: "";
@@ -30,7 +36,7 @@ export const ContainerMain = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left:800px;
+  /* margin-left:800px; */
 
 
 `
@@ -98,9 +104,9 @@ export const ContainerText = styled.div`
     color: white;
    
     padding: 20px;
-    width: 600px;
-    margin-right: -550px;
-    margin-bottom: -100px;
+    /* width: 600px; */
+    /* margin-right: -550px;
+    margin-bottom: -100px; */
 
     h1{
         font-weight: 700;
