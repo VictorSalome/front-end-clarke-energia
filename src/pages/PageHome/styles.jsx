@@ -61,12 +61,12 @@ export const Input = styled.input`
     border: 1px solid #000;
     outline: none;
     padding: 0 5px;
-
-
     
-
-  
- 
+     &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
 
 `
 

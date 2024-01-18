@@ -27,24 +27,31 @@ const style = {
     p: 4,
 };
 
-export const BasicModal = () => {
-    const [open, setOpen] = React.useState(false);
+export const BasicModal = ({ setOpen, open, mileage }) => {
+
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
     const [suppliers, setSuppliers] = useState([]);
 
+
+
     useEffect(() => {
         async function loadSuppliers() {
-            const response = await apiSupplier.get('suppliers')
+            const response = await apiSupplier.get('suppliers', {
+                params: {
+                    kwh: mileage
+                }
+            })
+
             setSuppliers(response.data)
         }
         loadSuppliers()
-    }, [])
+    }, [mileage])
 
 
     return (
         <Container>
-            <Button onClick={handleOpen}>Cotar fornecedores</Button>
+            {/* <Button onClick={handleOpen}>Cotar fornecedores</Button> */}
             <Modal
                 open={open}
                 onClose={handleClose}
