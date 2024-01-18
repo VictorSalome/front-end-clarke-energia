@@ -27,14 +27,13 @@ const style = {
 };
 
 export const BasicModal = ({ setOpen, open, mileage }) => {
-
-    // const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
     const [suppliers, setSuppliers] = useState([]);
 
 
 
     useEffect(() => {
+        if(!open) return;
         async function loadSuppliers() {
             const response = await apiSupplier.get('suppliers', {
                 params: {
@@ -45,7 +44,7 @@ export const BasicModal = ({ setOpen, open, mileage }) => {
             setSuppliers(response.data)
         }
         loadSuppliers()
-    }, [mileage])
+    }, [open, mileage])
 
 
     return (
