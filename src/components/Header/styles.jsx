@@ -39,19 +39,22 @@ export const MainHeader = styled.header`
             align-items: center;
             gap: 3rem;
             list-style: none;
-            li{
-             
             
-            }
+            li{
+                cursor: pointer;
+
+                &:hover {
+                    color: #26E48F;
+                    transition: 0.3s;
+                }
+            } 
+            
         }
        
 
     }
 
-    h3{
-        &:hover {
-        color: #00E082;
-    }
+  
     }
     
 `
