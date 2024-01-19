@@ -54,8 +54,6 @@ export const MainHeader = styled.header`
 
     }
 
-  
-    }
     
 `
 
