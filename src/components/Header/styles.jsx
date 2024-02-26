@@ -11,9 +11,9 @@ export const Container = styled.div`
 
 export const Logo = styled.img`
 
-    height: 50px;
-    width: auto; 
-    margin-right: 20px;
+    height: 25px;
+    width: 60px; 
+    margin-right: 100px;
     cursor: pointer;
     `
 
@@ -37,20 +37,20 @@ export const MainHeader = styled.header`
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 3rem;
+            gap: 2rem;
             list-style: none;
             
             li{
                 cursor: pointer;
 
                 &:hover {
-                    color: #26E48F;
+                    color: #007DC4;
                     transition: 0.3s;
                 }
             } 
             
         }
-       
+    
 
     }
 
@@ -59,7 +59,7 @@ export const MainHeader = styled.header`
 
 export const Button = styled.button`
     /* margin-left: 180px; */
-    background-color: #26E48F;
+    background-color: #007DC4;
     border-radius: 30px;
     width: 175px;
     height: 35px;
@@ -68,6 +68,7 @@ export const Button = styled.button`
     border: 1px solid #000;
     outline: none;
     min-width: 150px;
+    margin-left: 5rem;
 
     cursor: pointer;
 

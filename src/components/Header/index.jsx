@@ -8,7 +8,7 @@ export const Header = () => {
         <Container>
 
             <MainHeader>
-                <Logo src={LogoClarke} alt='LogoeClarke' />
+                <Logo src="https://www.enel.com/etc.clientlibs/enel-common/clientlibs/clientlib-bundle/resources/img/logo/logo.svg" alt='LogoeClarke'  />
                 <nav>
                     <ul>
                         <li>

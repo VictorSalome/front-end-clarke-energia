@@ -35,7 +35,7 @@ export const PageHome = () => {
                 <ContainerText>
                         <p>#ofuturoélivre</p>
                         <h1>Economize até 40% na conta de luz da sua empresa sem precisar investir</h1>
-                        <p>Se o seu negócio gasta mais de R$ 10 mil por mês com energia, a Clarke pode te ajudar a economizar com o Mercado Livre de Energia.</p>
+                        <p>Se o seu negócio gasta mais de R$ 10 mil por mês com energia, a Enel pode te ajudar a economizar com o Mercado Livre de Energia.</p>
                 </ContainerText>
                 <ContainerMain>
                     <ContainerCard>

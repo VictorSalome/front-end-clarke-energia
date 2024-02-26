@@ -78,7 +78,7 @@ export const Input = styled.input`
 `
 
 export const Button = styled.button`
-    background-color: #26E48F;
+    background-color: #007DC4;
     border-radius: 30px;
     width: 80%;
     height: 50px;
@@ -92,7 +92,7 @@ export const Button = styled.button`
    
 
     &:hover {
-        background-color: #60be94;
+        background-color: #60B4DE;
         transition: 0.3s;
     }
 
